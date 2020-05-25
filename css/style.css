@@ -230,8 +230,8 @@ footer {
 
 #logo{
   transition: 0.2s;
-  max-height: 90px;
-  max-width: 90px;
+  max-height: 80px;
+  max-width: 80px;
 }
 
 .custom-navbar .navbar-brand {
@@ -324,17 +324,27 @@ footer {
     text-align: center;
 }
 
+#intro::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.7);
+}
+
 #intro h3 {
   letter-spacing: 2px;
 }
 #intro h1{
-  font-size: 3em;
-  letter-spacing: 0.5em;
+  font-size: 2.5em;
+  letter-spacing: 0.2em;
   transition: 0.4s ease-in-out;
 
 }
 #intro h1:hover{
-  font-size: 4em;
+  font-size: 3em;
   transition: 0.4s ease-in-out;
 }
 
@@ -471,7 +481,8 @@ height: auto;
 }
 
 #program img {
-  border-radius: 50%;
+  border-radius: 5%;
+  box-shadow: 25px 20px 46px -19px rgba(0,0,0,0.75);
 }
 
 .nav-tabs {
@@ -511,11 +522,11 @@ height: auto;
     Regsiter section              
 -----------------------------------------*/
 #register {
-    background: url('../images/register-bg.jpg') 50% 0 repeat-y fixed;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    color: #ffffff;
+  background-color: rgba(0,0,0,0.7);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  color: #ffffff;
 }
 
 #register .form-control {
@@ -617,7 +628,7 @@ height: auto;
    Venue section              
 -----------------------------------------*/
 #venue {
-    background: url('../images/venue-bg.jpg') 50% 0 repeat-y fixed;
+    background: url('../images/aimsnvalue.jpeg') 50% 0 repeat-y fixed;
     background-size: cover;
     background-position: center center;
     padding-top: 7rem;
@@ -656,8 +667,9 @@ height: auto;
 #venue ol li:before {
   content: counter(item) ". "; 
   counter-increment: item; 
-  color: #333333;
+  color: #ff7700;
   padding-right: 0.5em;
+  font-weight: bold;
 }
 
 #venue ul{
@@ -675,10 +687,12 @@ height: auto;
 #venue ul li:before {
   font-weight: bolder;
   font-size: 1.5em;
-  color: #333333;
+  color: #ff7700;
   content: "\2022";
   padding-right: 0.2em;
   display: inline-block;
+  font-weight: bold;
+
 
 }
 
@@ -696,9 +710,26 @@ height: auto;
    Contact section              
 -----------------------------------------*/
 #contact {
-    background: url('../images/contact-bg.jpg') 50% 0 repeat-y fixed;
+    background: url('../images/keepintouch.jpeg') 50% 0 repeat-y fixed;
     background-size: cover;
     background-position: center center;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    position: relative;
+}
+
+#contact p{
+  color: #f1f1f1;
+}
+
+#contact:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.7);
 }
 
 #contact .contact_des {
